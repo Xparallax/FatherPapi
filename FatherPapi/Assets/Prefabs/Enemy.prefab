@@ -15,9 +15,11 @@ GameObject:
   - component: {fileID: 5909055833552450284}
   - component: {fileID: 5909055833552450283}
   - component: {fileID: 3613228244179535893}
+  - component: {fileID: 6227596914284894113}
+  - component: {fileID: -2103855478694132013}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -188,3 +190,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+--- !u!114 &6227596914284894113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5909055833552450257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e472ec2a012c9e408daf856841d70ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-2103855478694132013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5909055833552450257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22ace12f48a43f54eaf8d6be91d68a40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  droppedItemPrefab: {fileID: 2661180718365714814, guid: 6f348105131c011418938656180b9d0b, type: 3}
+  lootList:
+  - {fileID: 11400000, guid: d177fa6842e0fe8448f0f136521429f6, type: 2}
+  - {fileID: 11400000, guid: 1da12df0856125f41aecdaf093b50d6d, type: 2}
+  - {fileID: 11400000, guid: 3945b73f556b4794095da60a18db64f1, type: 2}
