@@ -6,6 +6,7 @@ public class LootBag : MonoBehaviour
 {
     public GameObject droppedItemPrefab;
     public List<Loot> lootList = new List<Loot>();
+   
 
     Loot GetDroppedItem()
     {

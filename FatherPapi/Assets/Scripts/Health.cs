@@ -53,7 +53,7 @@ public class Health : MonoBehaviour
 
         if(health <= 0)
         {
-            GetComponent<LootBag>().InstantiateLoot(transform.position);
+            
             Die();
         }
     }
@@ -81,10 +81,15 @@ public class Health : MonoBehaviour
         this.health += amount;
     }
 
+    
+    
+
     private void Die()
     {
+        
         Debug.Log("death");
         Destroy(gameObject);
+        GetComponent<LootBag>().InstantiateLoot(transform.position);
     }
 }
 

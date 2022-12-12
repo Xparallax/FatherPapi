@@ -986,9 +986,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyPrefab: {fileID: 2943423957095870901, guid: 2b0607fcba07b3d4ea56c9c42c99ed47, type: 3}
-  BigEnemyPrefab: {fileID: 2943423957095870901, guid: 9a9655e7523f16742bd233acb227ec59, type: 3}
+  BigEnemyPrefab: {fileID: 2943423957095870901, guid: 1da6db907e5ce084b880aa518bdd7a11, type: 3}
   EnemyInterval: 7
-  BigEnemyInterval: 8
+  BigEnemyInterval: 7
 --- !u!4 &727144648
 Transform:
   m_ObjectHideFlags: 0
