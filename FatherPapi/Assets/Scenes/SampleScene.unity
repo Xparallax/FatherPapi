@@ -966,6 +966,7 @@ GameObject:
   m_Component:
   - component: {fileID: 727144648}
   - component: {fileID: 727144647}
+  - component: {fileID: 727144649}
   m_Layer: 0
   m_Name: EnemySpawner (1)
   m_TagString: Untagged
@@ -1001,6 +1002,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &727144649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727144646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4473f61fed7eed34e9422ab3a7979939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyPrefab: {fileID: 2943423957095870901, guid: 1da6db907e5ce084b880aa518bdd7a11, type: 3}
+  EnemyInterval: 3.5
 --- !u!1 &773016127
 GameObject:
   m_ObjectHideFlags: 0
@@ -1270,7 +1285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4473f61fed7eed34e9422ab3a7979939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyPrefab: {fileID: 5909055833552450257, guid: fb12fc736394fe0408260ecea2b6a5c4, type: 3}
+  EnemyPrefab: {fileID: 2943423957095870901, guid: 9a9655e7523f16742bd233acb227ec59, type: 3}
   EnemyInterval: 3.5
 --- !u!1 &1286995585
 GameObject:
