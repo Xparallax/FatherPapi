@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be3d98dbeba0f104aba9dd871ef1a68b, type: 3}
   m_Name: Children
   m_EditorClassIdentifier: 
-  hp: 5
+  hp: 10
   damage: 3
   speed: 4

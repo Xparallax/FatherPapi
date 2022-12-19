@@ -986,9 +986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyPrefab: {fileID: 2943423957095870901, guid: 2b0607fcba07b3d4ea56c9c42c99ed47, type: 3}
-  BigEnemyPrefab: {fileID: 2943423957095870901, guid: 1da6db907e5ce084b880aa518bdd7a11, type: 3}
   EnemyInterval: 7
-  BigEnemyInterval: 7
 --- !u!4 &727144648
 Transform:
   m_ObjectHideFlags: 0
@@ -1254,7 +1252,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 946078541}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.21, y: 1.14, z: 0}
+  m_LocalPosition: {x: -11.19, y: 0.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1273,9 +1271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyPrefab: {fileID: 5909055833552450257, guid: fb12fc736394fe0408260ecea2b6a5c4, type: 3}
-  BigEnemyPrefab: {fileID: 2943423957095870901, guid: 9a9655e7523f16742bd233acb227ec59, type: 3}
   EnemyInterval: 3.5
-  BigEnemyInterval: 10
 --- !u!1 &1286995585
 GameObject:
   m_ObjectHideFlags: 0
@@ -2241,6 +2237,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e13489b90a9a74409ad23eafb19f3de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1979150996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1979150998}
+  - component: {fileID: 1979150997}
+  m_Layer: 0
+  m_Name: EnemySpawner (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1979150997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979150996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4473f61fed7eed34e9422ab3a7979939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyPrefab: {fileID: 5909055833552450257, guid: fb12fc736394fe0408260ecea2b6a5c4, type: 3}
+  EnemyInterval: 3.5
+--- !u!4 &1979150998
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979150996}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.33, y: 2.71, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2135480756
 GameObject:
   m_ObjectHideFlags: 0
