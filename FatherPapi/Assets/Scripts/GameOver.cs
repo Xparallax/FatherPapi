@@ -1,20 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
-  public void RestartButton(){
-SceneManager.LoadScene("SampleScene");
-  }
+    public void Restart ()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
 
-  public void ExitButton(){
-SceneManager.LoadScene("MainMenu");
-  }
-  
-  public void Setup(){
-    gameObject.SetActive(true);
-  }
+    public void MainMenu ()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
+

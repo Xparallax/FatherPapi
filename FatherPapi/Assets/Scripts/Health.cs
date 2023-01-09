@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -91,5 +92,5 @@ public class Health : MonoBehaviour
         Destroy(gameObject);
         GetComponent<LootBag>().InstantiateLoot(transform.position);
     }
+     
 }
-
