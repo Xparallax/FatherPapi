@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+    public GameObject attackPrefab;
+    public Transform attackSource;
+
     private GameObject attackArea = default;
 
     private bool attacking = false;
@@ -41,7 +44,6 @@ public class PlayerAttack : MonoBehaviour
 
     private void Attack()
     {
-        attacking = true;
-        attackArea.SetActive(attacking);
+        Instantiate(attackPrefab, attackSource.position, Quaternion.identity);
     }
 }

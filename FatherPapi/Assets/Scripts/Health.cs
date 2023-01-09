@@ -85,7 +85,7 @@ public class Health : MonoBehaviour
     
     
 
-    private void Die()
+    protected virtual void Die()
     {
         
         Debug.Log("death");

@@ -6,12 +6,20 @@ public class AttackArea : MonoBehaviour
 {
     private int damage = 3;
 
+    private void Start()
+    {
+        Destroy(gameObject, 0.5f);
+    }
+
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if(collider.GetComponent<Health>() != null)
+        if (collider.CompareTag("Enemy"))
         {
-            Health health = collider.GetComponent<Health>();
-            health.Damage(damage);
+            if(collider.GetComponent<Health>() != null)
+            {
+                Health health = collider.GetComponent<Health>();
+                health.Damage(damage);
+            }
         }
     }
 }
