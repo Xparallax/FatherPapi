@@ -13,7 +13,7 @@ public class Fire : MonoBehaviour
     [SerializeField]
     private GameObject[] ammo;
 
-    private int ammoAmount;
+    public int ammoAmount;
 
     // Start is called before the first frame update
     void Start()

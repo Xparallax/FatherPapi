@@ -9,4 +9,11 @@ public class DestroyBullet : MonoBehaviour
     {
         Destroy(gameObject,2f);
     }
+
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destroy(GameObject.FindWithTag("Enemy"));
+        Destroy(GameObject.FindWithTag("God"));
+    }
 }
