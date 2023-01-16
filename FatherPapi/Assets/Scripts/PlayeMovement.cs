@@ -6,7 +6,7 @@ public class PlayeMovement : MonoBehaviour
 {
     private float horizontal;
     private float speed = 8f;
-    private float jumpingPower = 16f;
+    [SerializeField] private float jumpingPower = 16f;
     private bool isFacingRight = true;
 
     [SerializeField] private Rigidbody2D rb;
@@ -39,7 +39,7 @@ public class PlayeMovement : MonoBehaviour
 
     private bool IsGrounded()
     {
-        return Physics2D.Raycast(groundCheck.position, Vector2.down, 0.2f, 1 << groundLayer.value);
+        return Physics2D.Raycast(groundCheck.position, Vector2.down, 0.2f, groundLayer.value);
     }
 
 

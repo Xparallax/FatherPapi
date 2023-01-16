@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5888319568677265485}
   - component: {fileID: 8442018403518047586}
   - component: {fileID: -2850714380502105530}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: LootPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -171,3 +171,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db762ed47bcfeee45b008cc647622a8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lootType: {fileID: 0}

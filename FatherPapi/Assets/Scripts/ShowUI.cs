@@ -21,10 +21,11 @@ public class ShowUI : MonoBehaviour
         }
 
     }
- IEnumerator WaitForSec()
+
+    IEnumerator WaitForSec()
     {
         yield return new WaitForSeconds(10);
-        UnityEngine.Object.Destroy(uiObject);
-        UnityEngine.Object.Destroy(gameObject);
+        Destroy(uiObject);
+        Destroy(gameObject);
     }
 }

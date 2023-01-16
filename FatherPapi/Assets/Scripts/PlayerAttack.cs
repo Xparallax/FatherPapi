@@ -6,7 +6,7 @@ public class PlayerAttack : MonoBehaviour
 {
     public GameObject attackPrefab;
     public Transform attackSource;
-
+    Animator myAnimation;
     private GameObject attackArea = default;
 
     private bool attacking = false;
@@ -17,6 +17,7 @@ public class PlayerAttack : MonoBehaviour
     void Start()
     {
         attackArea = transform.GetChild(0).gameObject;
+        myAnimation = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -26,6 +27,8 @@ public class PlayerAttack : MonoBehaviour
         {
             Attack();
         }
+
+        
 
         if(attacking)
         {
@@ -41,9 +44,13 @@ public class PlayerAttack : MonoBehaviour
             }
         }
     }
+    
+    
+  
 
-    private void Attack()
+    void Attack()
     {
         Instantiate(attackPrefab, attackSource.position, Quaternion.identity);
-    }
+        myAnimation.SetTrigger("Attack");
+    }    
 }

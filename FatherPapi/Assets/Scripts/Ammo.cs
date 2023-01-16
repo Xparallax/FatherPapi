@@ -8,5 +8,6 @@ public class Ammo : MonoBehaviour
   //{if (col.gameObject.tag.Equals("Player")){
   //  Fire.ammoAmount += 3;
    // Destoy(GameObject);
+   
   
 }

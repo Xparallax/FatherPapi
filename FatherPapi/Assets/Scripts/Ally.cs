@@ -35,6 +35,7 @@ public class Ally : MonoBehaviour
 
     private void Swarm()
     {
+        if (player == null) return;
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
     }
 

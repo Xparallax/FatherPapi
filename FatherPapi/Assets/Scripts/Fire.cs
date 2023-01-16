@@ -18,11 +18,8 @@ public class Fire : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      for (int i = 0; i <= 2; i++)
-      {
-        ammo[i].gameObject.SetActive(false);
-      }   
       ammoAmount = 0;
+      UpdateBulletUI();
     }
 
     // Update is called once per frame
@@ -36,13 +33,30 @@ public class Fire : MonoBehaviour
             ammo[ammoAmount].gameObject.SetActive(false);
         }
 
-        if (Input.GetKeyDown(KeyCode.R))
+        // if (Input.GetKeyDown(KeyCode.R))
+        // {
+        //     ammoAmount = 3;
+        //     UpdateBulletUI();
+        // }
+    }
+
+    void UpdateBulletUI()
+    {
+        for (int i = 0; i <= 2; i++)
         {
-            ammoAmount = 3;
-            for (int i = 0; i <= 2; i++)
-            {
-                ammo[i].gameObject.SetActive(true);
-            }
+            ammo[i].gameObject.SetActive(ammoAmount > i);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        lootheal lb = col.gameObject.GetComponent<lootheal>();
+        if (lb == null) return;
+
+        if (lb.lootType.lootName == "Bible")
+        {
+            ammoAmount++;
+            UpdateBulletUI();
         }
     }
 }

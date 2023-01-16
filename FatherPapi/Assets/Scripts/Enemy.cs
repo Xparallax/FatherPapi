@@ -13,10 +13,13 @@ public class Enemy : MonoBehaviour
     private EnemyData data;
 
     private GameObject player;
+    private SpriteRenderer sp;
+
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        sp = GetComponent<SpriteRenderer>();
         SetEnemyValues();
     }
 
@@ -38,6 +41,8 @@ public class Enemy : MonoBehaviour
         if (player != null)
         {
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+            float direction = transform.position.x - player.transform.position.x;
+            sp.flipX = direction > 0;
         }
     }
 
