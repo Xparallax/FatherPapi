@@ -28,7 +28,7 @@ public class Fire : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q) && ammoAmount > 0)
         {
             var spawnedBullet = Instantiate(bullet, barrel.position, barrel.rotation);
-            spawnedBullet.GetComponent<Rigidbody2D>().AddForce(Vector2.right * 500f);
+            spawnedBullet.GetComponent<Rigidbody2D>().AddForce(Vector2.right * 500f * Mathf.Sign(transform.localScale.x));
             ammoAmount -= 1;
             ammo[ammoAmount].gameObject.SetActive(false);
         }

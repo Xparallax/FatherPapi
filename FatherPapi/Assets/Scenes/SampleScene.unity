@@ -1923,7 +1923,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A and d to move  \nE to punch \nspace to jump \n"
+  m_text: audio, gameover, shooting distance
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2775,7 +2775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df8547fc263f7ed47bf284beb1f3c95a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpingPower: 14
+  jumpingPower: 10
   rb: {fileID: 1972137211}
   groundCheck: {fileID: 243931953}
   groundLayer:
