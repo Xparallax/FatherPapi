@@ -1900,7 +1900,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189.33594, y: -154.57288}
+  m_AnchoredPosition: {x: -61, y: 54}
   m_SizeDelta: {x: 422.6719, y: 113.1458}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1269893372
@@ -1923,7 +1923,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: audio, gameover, shooting distance
+  m_text: A D to move, E to kick, Space to Jump, Q to throw bibles, collect bibles
+    before jesus arrives, he can only be killed by bibles
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1986,7 +1987,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -20.836792, y: 0, z: -197.94836, w: -276.08615}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2865,7 +2866,7 @@ MonoBehaviour:
   - {fileID: 688225556}
   - {fileID: 148697604}
   - {fileID: 68649051}
-  ammoAmount: 0
+  ammoAmount: 3
 --- !u!95 &1972137220
 Animator:
   serializedVersion: 3

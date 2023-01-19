@@ -5,7 +5,7 @@ public class Load : MonoBehaviour {
     
     // Use this for initialization
     IEnumerator Start () {
-        yield return new WaitForSeconds(37);        
+        yield return new WaitForSeconds(40);        
         Application.LoadLevel ("SampleScene");  }
    
     // Update is called once per frame

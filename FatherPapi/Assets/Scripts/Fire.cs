@@ -55,7 +55,7 @@ public class Fire : MonoBehaviour
 
         if (lb.lootType.lootName == "Bible")
         {
-            ammoAmount++;
+            ammoAmount = Mathf.Clamp(ammoAmount + 1, 0, 3);
             UpdateBulletUI();
         }
     }
