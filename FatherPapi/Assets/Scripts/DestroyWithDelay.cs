@@ -20,7 +20,7 @@ public class DestroyWithDelay : MonoBehaviour
     {
         if(collision.gameObject.tag == "Enemy")
         {
-            Destroy(gameObject,16f);
+            Destroy(gameObject,20f);
         }
     }
 
