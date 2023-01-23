@@ -13,10 +13,13 @@ public class Ally : MonoBehaviour
     private EnemyData data;
 
     private GameObject player;
+        private SpriteRenderer sp;
+
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Enemy");
+        sp = GetComponent<SpriteRenderer>();
         SetEnemyValues();
     }
 
@@ -35,9 +38,14 @@ public class Ally : MonoBehaviour
 
     private void Swarm()
     {
-        if (player == null) return;
-        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        if (player != null)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+            float direction = transform.position.x - player.transform.position.x;
+            sp.flipX = direction > 0;
+        }
     }
+    
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -51,5 +59,6 @@ public class Ally : MonoBehaviour
           
         }
     }
+        
 }
 

@@ -13,11 +13,15 @@ public class God : MonoBehaviour
     private EnemyData data;
 
     private GameObject player;
+    GameAudio gameAudio;
+
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Enemy");
         SetEnemyValues();
+        gameAudio = FindObjectOfType<GameAudio>();
+        gameAudio.SwitchToGodMode();
     }
 
     // Update is called once per frame
@@ -52,5 +56,11 @@ public class God : MonoBehaviour
             }
           
         }
+    }
+
+
+    void OnDestroy()
+    {
+        gameAudio.SwitchToNormal();
     }
 }
