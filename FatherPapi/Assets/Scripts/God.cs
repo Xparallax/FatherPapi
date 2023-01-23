@@ -61,6 +61,7 @@ public class God : MonoBehaviour
 
     void OnDestroy()
     {
-        gameAudio.SwitchToNormal();
+        if (gameAudio != null)
+            gameAudio.SwitchToNormal();
     }
 }
