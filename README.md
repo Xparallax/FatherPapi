@@ -1,7 +1,7 @@
 # FatherPapi
  ## Scripts
 
-### Ally.cs
+### Ally
 
 this script is for the christian children therefore from the database "swarm" it was made so it would not harm the player however would attack any object with the tag enemy.
 
